@@ -1,25 +1,22 @@
 import React, { useState } from "react";
 
-const Login = () => {
+const Login = ({ handleLogin }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setError(""); // Clear previous errors
+    setError("");
 
     if (!email || !password) {
       setError("Both fields are required!");
       return;
     }
+    handleLogin(email, password);
 
-    console.log("Email:", email);
-    console.log("Password:", password);
-    // Add authentication logic here (API call, etc.)
-
-    setEmail("")
-    setPassword("")
+    setEmail("");
+    setPassword("");
   };
 
   return (
