@@ -1,9 +1,8 @@
-import e from "cors";
-
 const employees = [
   {
     id: 1,
-    email: "employee1@example.com",
+    firstName: "Raj",
+    email: "raj@gmail.com",
     password: "123",
     tasks: [
       {
@@ -37,9 +36,11 @@ const employees = [
         failed: false,
       },
     ],
+    taskNumbers: { active: 1, newTask: 1, completed: 1, failed: 0 },
   },
   {
     id: 2,
+    firstName: "Vihaan",
     email: "employee2@example.com",
     password: "123",
     tasks: [
@@ -84,9 +85,11 @@ const employees = [
         failed: true,
       },
     ],
+    taskNumbers: { active: 1, newTask: 1, completed: 1, failed: 1 },
   },
   {
     id: 3,
+    firstName: "Kabir",
     email: "employee3@example.com",
     password: "123",
     tasks: [
@@ -141,9 +144,11 @@ const employees = [
         failed: false,
       },
     ],
+    taskNumbers: { active: 1, newTask: 2, completed: 1, failed: 1 },
   },
   {
     id: 4,
+    firstName: "Ishaan",
     email: "employee4@example.com",
     password: "123",
     tasks: [
@@ -178,9 +183,11 @@ const employees = [
         failed: false,
       },
     ],
+    taskNumbers: { active: 1, newTask: 1, completed: 1, failed: 0 },
   },
   {
     id: 5,
+    firstName: "Reyansh",
     email: "employee5@example.com",
     password: "123",
     tasks: [
@@ -225,8 +232,10 @@ const employees = [
         failed: true,
       },
     ],
+    taskNumbers: { active: 1, newTask: 1, completed: 1, failed: 1 },
   },
 ];
+
 
 const admin = [
   {
