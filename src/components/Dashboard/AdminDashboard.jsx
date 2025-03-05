@@ -6,7 +6,7 @@ import AllTaskList from "../Others/AllTaskList";
 const AdminDashboard = () => {
   return (
     <div className="h-screen w-full p-7">
-      <Header />
+      <Header/>
       <CreateTask/>
       <AllTaskList/>
     </div>

@@ -13,7 +13,7 @@ const AuthProvider = ({ children }) => {
   
     setUserData({ employees, admin });
   
-    console.log("Check the data:", employees, admin);
+    // console.log("Check the data:", employees, admin);
   }, []);
  
 

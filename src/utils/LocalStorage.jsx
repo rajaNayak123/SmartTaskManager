@@ -253,8 +253,8 @@ export const getLocalStorage = () => {
   const employees = JSON.parse(localStorage.getItem("employees")) || [];
   const admin = JSON.parse(localStorage.getItem("admin")) || [];
 
-  console.log("Fetched Employees:", employees);
-  console.log("Fetched Admin:", admin);
+  // console.log("Fetched Employees:", employees);
+  // console.log("Fetched Admin:", admin);
 
   return { employees, admin };
 };
